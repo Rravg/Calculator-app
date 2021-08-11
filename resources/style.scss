@@ -5,33 +5,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
 @import 'scss/track';
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     background-color: theme1.$main-background;
+    font-size: 32px;
+    font-weight: 700;
+
 }
 
 .wrapper {
     background-color: blue;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
     padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.name {
+
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.value {
+    text-align: right;
+    word-spacing: 50px;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .bar {
 
-    input {
-        width: 50px;
-        float: right;
-    }
+        
+        .theme-selector {
+            
+        }
+        
+        label {
 
-    label {
-        text-align: right;
+        }
     }
 }
 
+.number-display {
+    width: 100%;
+    border-radius: 15px;
+    height: 200px;
+    margin: 20px 0px;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: right;
+}
+
+.number-grid {
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: green;
+    display: grid;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-areas:
+    "seven eight nine del"
+    "four five six sum"
+    "one two three minus"
+    "point zero division mult"
+    "reset reset equal equal";
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    .button {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: chocolate;
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+
+    .five {
+        grid-area: five;
+    }
+
+    .six {
+        grid-area: six;
+    }
+
+    .seven {
+        grid-area: seven;
+    }
+
+    .eight {
+        grid-area: eight;
+    }
+
+    .nine {
+        grid-area: nine;
+    }
+
+    .delete {
+        grid-area: del;
+        
+    }
+
+    .sum {
+        grid-area: sum;
+    }
+
+    .minus {
+        grid-area: minus;
+    }
+
+    .multiplication {
+        grid-area: mult;
+    }
+    
+    .reset {
+        grid-area: reset;
+        background-color: blueviolet;
+    }
+
+    .equal {
+        grid-area: equal;
+    }
+    
+    .point {
+        grid-area: point;
+    }
+}
+
+
+
+
 @media only screen and (min-width: 450px) {
     .wrapper {
-        width: 40%;
-        margin: 10% auto;
+        margin: 10% 25%;
     }
 }

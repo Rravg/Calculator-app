@@ -1,27 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap");
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #3a4764;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .wrapper {
   background-color: blue;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
   padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
 }
 
-.header input {
-  width: 50px;
-  float: right;
+p {
+  padding: 0px;
+  margin: 0px;
 }
-.header label {
+
+.value {
   text-align: right;
+  word-spacing: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number-display {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  margin: 20px 0px;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: right;
+}
+
+.number-grid {
+  height: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: green;
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-areas: "seven eight nine del" "four five six sum" "one two three minus" "point zero division mult" "reset reset equal equal";
+  justify-items: stretch;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.number-grid .button {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: chocolate;
+}
+.number-grid .one {
+  grid-area: one;
+}
+.number-grid .two {
+  grid-area: two;
+}
+.number-grid .three {
+  grid-area: three;
+}
+.number-grid .four {
+  grid-area: four;
+}
+.number-grid .five {
+  grid-area: five;
+}
+.number-grid .six {
+  grid-area: six;
+}
+.number-grid .seven {
+  grid-area: seven;
+}
+.number-grid .eight {
+  grid-area: eight;
+}
+.number-grid .nine {
+  grid-area: nine;
+}
+.number-grid .delete {
+  grid-area: del;
+}
+.number-grid .sum {
+  grid-area: sum;
+}
+.number-grid .minus {
+  grid-area: minus;
+}
+.number-grid .multiplication {
+  grid-area: mult;
+}
+.number-grid .reset {
+  grid-area: reset;
+  background-color: blueviolet;
+}
+.number-grid .equal {
+  grid-area: equal;
+}
+.number-grid .point {
+  grid-area: point;
 }
 
 @media only screen and (min-width: 450px) {
   .wrapper {
-    width: 40%;
-    margin: 10% auto;
+    margin: 10% 25%;
   }
 }/*# sourceMappingURL=style.css.map */
