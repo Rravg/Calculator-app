@@ -1,4 +1,106 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+input[type=range] {
+  height: 30px;
+  -webkit-appearance: none;
+  margin: 0px 0px;
+  width: 40%;
+  padding-top: 10px;
+  background: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #50555C;
+  border-radius: 50px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 24px;
+  width: 24px;
+  border-radius: 23px;
+  background: #529DE1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #50555C;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #50555C;
+  background: #50555C;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 24px;
+  width: 24px;
+  border-radius: 23px;
+  background: #529DE1;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #50555C;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 1px 1px 1px #50555C;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #50555C;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 1px 1px 1px #50555C;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 24px;
+  width: 24px;
+  border-radius: 23px;
+  background: #529DE1;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #50555C;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #50555C;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -10,7 +112,7 @@ html {
 body {
   background-color: #3a4764;
   font-size: 32px;
-  font-weight: 700;
+  font-family: "Spartan";
 }
 
 .wrapper {
@@ -25,10 +127,9 @@ p {
   padding: 0px;
   margin: 0px;
 }
-
-.value {
+p.value {
   text-align: right;
-  word-spacing: 50px;
+  word-spacing: 20px;
 }
 
 .header {
@@ -36,20 +137,39 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.header .bar {
+  font-size: 0.5em;
+  text-align: right;
+}
+.header .bar label {
+  display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .number-display {
   width: 100%;
   border-radius: 15px;
   height: 200px;
   margin: 20px 0px;
-  font-size: inherit;
-  font-weight: inherit;
   text-align: right;
+  font-size: 1.5em;
+  font-weight: 700;
+  overflow: scroll;
 }
 
 .number-grid {
   height: 100%;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
   background-color: green;
   display: grid;
   width: 100%;
@@ -63,6 +183,8 @@ p {
   cursor: pointer;
   border-radius: 10px;
   background-color: chocolate;
+  font-size: inherit;
+  font-weight: 700;
 }
 .number-grid .one {
   grid-area: one;
@@ -93,6 +215,7 @@ p {
 }
 .number-grid .delete {
   grid-area: del;
+  font-size: 1.2rem;
 }
 .number-grid .sum {
   grid-area: sum;
@@ -106,6 +229,7 @@ p {
 .number-grid .reset {
   grid-area: reset;
   background-color: blueviolet;
+  font-size: 1.2rem;
 }
 .number-grid .equal {
   grid-area: equal;

@@ -2,8 +2,9 @@
 @use 'scss/theme2';
 @use 'scss/theme3';
 
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 @import 'scss/track';
+
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -16,7 +17,7 @@ html {
 body {
     background-color: theme1.$main-background;
     font-size: 32px;
-    font-weight: 700;
+    font-family: 'Spartan';
 
 }
 
@@ -28,35 +29,39 @@ body {
     flex-flow: column;
 }
 
-.name {
-
-}
-
 p {
     padding: 0px;
     margin: 0px;
-}
-
-.value {
-    text-align: right;
-    word-spacing: 50px;
+    &.value {
+        text-align: right;
+        word-spacing: 20px;
+    }
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     .bar {
-
-        
-        .theme-selector {
-            
-        }
+        font-size: 0.5em;
+        text-align: right;
         
         label {
+           display: inline-block;
 
         }
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .number-display {
@@ -64,15 +69,16 @@ p {
     border-radius: 15px;
     height: 200px;
     margin: 20px 0px;
-    font-size: inherit;
-    font-weight: inherit;
     text-align: right;
+    font-size: 1.5em;
+    font-weight: 700;
+    overflow: scroll;
 }
 
 .number-grid {
     height: 100%;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     background-color: green;
     display: grid;
     width: 100%;
@@ -91,6 +97,8 @@ p {
         cursor: pointer;
         border-radius: 10px;
         background-color: chocolate;
+        font-size: inherit;
+        font-weight: 700;
     }
 
     .one {
@@ -131,7 +139,7 @@ p {
 
     .delete {
         grid-area: del;
-        
+        font-size: 1.2rem;
     }
 
     .sum {
@@ -149,6 +157,7 @@ p {
     .reset {
         grid-area: reset;
         background-color: blueviolet;
+        font-size: 1.2rem;
     }
 
     .equal {
@@ -159,6 +168,7 @@ p {
         grid-area: point;
     }
 }
+
 
 
 
