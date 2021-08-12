@@ -1,4 +1,165 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+.theme-1 {
+  background-color: #3a4764;
+  color: white;
+}
+.theme-1 .wrapper {
+  background-color: #3a4764;
+}
+.theme-1 .wrapper .number-display {
+  background-color: #182034;
+  color: white;
+}
+.theme-1 .wrapper .number-grid {
+  background-color: #232c43;
+}
+.theme-1 .wrapper .number-grid .button {
+  background-color: #eae3dc;
+}
+.theme-1 .wrapper .number-grid .number {
+  color: #444b5a;
+  box-shadow: 0px 5px 0px 0px #b4a597;
+}
+.theme-1 .wrapper .number-grid .number:active {
+  box-shadow: none;
+}
+.theme-1 .wrapper .number-grid .reset, .theme-1 .wrapper .number-grid .equal, .theme-1 .wrapper .number-grid .delete {
+  color: white;
+}
+.theme-1 .wrapper .number-grid .reset, .theme-1 .wrapper .number-grid .delete {
+  background-color: #637097;
+  box-shadow: 0px 5px 0px 0px #404e72;
+}
+.theme-1 .wrapper .number-grid .reset:active, .theme-1 .wrapper .number-grid .delete:active {
+  box-shadow: none;
+}
+.theme-1 .wrapper .number-grid .equal {
+  background-color: #d03f2f;
+  box-shadow: 0px 5px 0px 0px #93261a;
+}
+.theme-1 .wrapper .number-grid .equal:active {
+  box-shadow: none;
+}
+.theme-1 input[type=range]::-webkit-slider-runnable-track {
+  background-color: #232c43;
+}
+.theme-1 input[type=range]::-webkit-slider-thumb {
+  background-color: #d03f2f;
+}
+.theme-1 input[type=range]::-moz-range-track {
+  background-color: #232c43;
+}
+.theme-1 input[type=range]::-moz-range-thumb {
+  background-color: #d03f2f;
+}
+
+.theme-2 {
+  background-color: #e6e6e6;
+  color: #35352c;
+}
+.theme-2 .wrapper {
+  background-color: #e6e6e6;
+}
+.theme-2 .number-display {
+  background-color: #ededed;
+  color: #35352c;
+}
+.theme-2 .number-grid {
+  background-color: #d1cccc;
+}
+.theme-2 .number-grid .button {
+  background-color: #e5e4e1;
+}
+.theme-2 .number-grid .number {
+  color: #35352c;
+  box-shadow: 0px 5px 0px 0px #a69d91;
+}
+.theme-2 .number-grid .number:active {
+  box-shadow: none;
+}
+.theme-2 .number-grid .reset, .theme-2 .number-grid .equal, .theme-2 .number-grid .delete {
+  color: white;
+}
+.theme-2 .number-grid .reset, .theme-2 .number-grid .delete {
+  background-color: #377f86;
+  box-shadow: 0px 5px 0px 0px #1b5f65;
+}
+.theme-2 .number-grid .reset:active, .theme-2 .number-grid .delete:active {
+  box-shadow: none;
+}
+.theme-2 .number-grid .equal {
+  background-color: #ca5502;
+  box-shadow: 0px 5px 0px 0px #893901;
+}
+.theme-2 .number-grid .equal:active {
+  box-shadow: none;
+}
+.theme-2 input[type=range]::-webkit-slider-runnable-track {
+  background-color: #d1cccc;
+}
+.theme-2 input[type=range]::-webkit-slider-thumb {
+  background-color: #ca5502;
+}
+.theme-2 input[type=range]::-moz-range-track {
+  background-color: #d1cccc;
+}
+.theme-2 input[type=range]::-moz-range-thumb {
+  background-color: #ca5502;
+}
+
+.theme-3 {
+  background-color: #160628;
+  color: #ffe53d;
+}
+.theme-3 .wrapper {
+  background-color: #160628;
+}
+.theme-3 .number-display {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+.theme-3 .number-grid {
+  background-color: #1d0934;
+}
+.theme-3 .number-grid .button {
+  background-color: #341c4f;
+}
+.theme-3 .number-grid .number {
+  color: #ffe53d;
+  box-shadow: 0px 5px 0px 0px #871c9c;
+}
+.theme-3 .number-grid .number:active {
+  box-shadow: none;
+}
+.theme-3 .number-grid .reset, .theme-3 .number-grid .delete {
+  color: white;
+  background-color: #58077d;
+  box-shadow: 0px 5px 0px 0px #bc15f4;
+}
+.theme-3 .number-grid .reset:active, .theme-3 .number-grid .delete:active {
+  box-shadow: none;
+}
+.theme-3 .number-grid .equal {
+  background-color: #00e0d1;
+  color: #1b2428;
+  box-shadow: 0px 5px 0px 0px #6cf9f2;
+}
+.theme-3 .number-grid .equal:active {
+  box-shadow: none;
+}
+.theme-3 input[type=range]::-webkit-slider-runnable-track {
+  background-color: #1d0934;
+}
+.theme-3 input[type=range]::-webkit-slider-thumb {
+  background-color: #00e0d1;
+}
+.theme-3 input[type=range]::-moz-range-track {
+  background-color: #1d0934;
+}
+.theme-3 input[type=range]::-moz-range-thumb {
+  background-color: #00e0d1;
+}
+
 input[type=range] {
   height: 30px;
   -webkit-appearance: none;
@@ -8,97 +169,37 @@ input[type=range] {
   background: none;
 }
 
-input[type=range]:focus {
-  outline: none;
-}
-
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 30px;
   cursor: pointer;
-  animate: 0.2s;
-  background: #50555C;
-  border-radius: 50px;
+  border-radius: 30px;
+  padding: 0px 5px;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 24px;
-  width: 24px;
-  border-radius: 23px;
-  background: #529DE1;
+  height: 20px;
+  width: 20px;
+  border-radius: 24px;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: 3px;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #50555C;
+  margin-top: 5px;
 }
 
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 30px;
   cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #50555C;
-  background: #50555C;
-  border-radius: 50px;
-  border: 0px solid #000000;
+  border-radius: 30px;
+  padding: 0px 5px;
 }
 
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 24px;
-  width: 24px;
-  border-radius: 23px;
-  background: #529DE1;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 24px;
   cursor: pointer;
-}
-
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 30px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
-input[type=range]::-ms-fill-lower {
-  background: #50555C;
-  border: 0px solid #000000;
-  border-radius: 100px;
-  box-shadow: 1px 1px 1px #50555C;
-}
-
-input[type=range]::-ms-fill-upper {
-  background: #50555C;
-  border: 0px solid #000000;
-  border-radius: 100px;
-  box-shadow: 1px 1px 1px #50555C;
-}
-
-input[type=range]::-ms-thumb {
-  margin-top: 1px;
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 24px;
-  width: 24px;
-  border-radius: 23px;
-  background: #529DE1;
-  cursor: pointer;
-}
-
-input[type=range]:focus::-ms-fill-lower {
-  background: #50555C;
-}
-
-input[type=range]:focus::-ms-fill-upper {
-  background: #50555C;
 }
 
 *, *::before, *::after {
@@ -116,7 +217,6 @@ body {
 }
 
 .wrapper {
-  background-color: blue;
   padding: 15px;
   height: 100vh;
   display: flex;
@@ -143,6 +243,7 @@ p.value {
 }
 .header .bar label {
   display: inline-block;
+  margin-right: 5px;
 }
 
 input::-webkit-outer-spin-button,
@@ -157,23 +258,24 @@ input[type=number] {
 
 .number-display {
   width: 100%;
-  border-radius: 15px;
   height: 200px;
+  border: none;
+  border-radius: 15px;
   margin: 20px 0px;
   text-align: right;
   font-size: 1.5em;
   font-weight: 700;
   overflow: scroll;
+  padding-right: 20px;
 }
 
 .number-grid {
   height: 100%;
   border-radius: 10px;
   padding: 20px;
-  background-color: green;
   display: grid;
   width: 100%;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-areas: "seven eight nine del" "four five six sum" "one two three minus" "point zero division mult" "reset reset equal equal";
   justify-items: stretch;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -182,9 +284,9 @@ input[type=number] {
 .number-grid .button {
   cursor: pointer;
   border-radius: 10px;
-  background-color: chocolate;
   font-size: inherit;
   font-weight: 700;
+  border: none;
 }
 .number-grid .one {
   grid-area: one;

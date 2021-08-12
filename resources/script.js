@@ -1,5 +1,6 @@
 let icon = document.getElementById('theme-selector');
-
+icon.value = 1;
+document.body.className = 'theme-1'
 const themeFunction = () => {
     let state = icon.value;
     if (state === '1') {

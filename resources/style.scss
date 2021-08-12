@@ -22,7 +22,6 @@ body {
 }
 
 .wrapper {
-    background-color: blue;
     padding: 15px;
     height: 100vh;
     display: flex;
@@ -49,7 +48,7 @@ p {
         
         label {
            display: inline-block;
-
+            margin-right: 5px;
         }
     }
 }
@@ -66,23 +65,24 @@ input[type=number] {
 
 .number-display {
     width: 100%;
-    border-radius: 15px;
     height: 200px;
+    border: none;
+    border-radius: 15px;
     margin: 20px 0px;
     text-align: right;
     font-size: 1.5em;
     font-weight: 700;
     overflow: scroll;
+    padding-right: 20px;
 }
 
 .number-grid {
     height: 100%;
     border-radius: 10px;
     padding: 20px;
-    background-color: green;
     display: grid;
     width: 100%;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-areas:
     "seven eight nine del"
     "four five six sum"
@@ -96,9 +96,10 @@ input[type=number] {
     .button {
         cursor: pointer;
         border-radius: 10px;
-        background-color: chocolate;
         font-size: inherit;
         font-weight: 700;
+        border: none;
+
     }
 
     .one {
@@ -168,10 +169,6 @@ input[type=number] {
         grid-area: point;
     }
 }
-
-
-
-
 
 @media only screen and (min-width: 450px) {
     .wrapper {

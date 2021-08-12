@@ -11,10 +11,73 @@ $key-shadow-1: hsl(285, 91%, 52%);
 $key-background_toggle: hsl(176, 100%, 44%);
 $key-shadow-2: hsl(177, 92%, 70%);
 
-$key-background-1: hsl(268, 47%, 21%);
+$key-background-2: hsl(268, 47%, 21%);
 $key-shadow-3: hsl(290, 70%, 36%);
 
 //Text
 $text-color-1: hsl(52, 100%, 62%);
 $text-color-2: hsl(0, 0, 100%);
-///Very dark blue: hsl(198, 20%, 13%) 
+$text-color-3: hsl(198, 20%, 13%) ;
+
+
+.theme-3 {
+    background-color: $main-background;
+    color: $text-color-1;
+    .wrapper {
+        background-color: $main-background;
+    }
+
+    .number-display {
+        background-color: $screen-background;
+        color: $text-color-1;
+    }
+
+    .number-grid {
+        background-color: $toggle-background_keypad-background;
+
+        .button {
+            background-color: $key-background-2;
+        }
+
+        .number {
+            color: $text-color-1;
+            box-shadow: 0px 5px 0px 0px $key-shadow-3;
+            &:active {
+                box-shadow: none;
+            }
+        }
+
+        .reset, .delete {
+            color: $text-color-2;
+            background-color: $key-background-1;
+            box-shadow: 0px 5px 0px 0px $key-shadow-1;
+            &:active {
+                box-shadow: none;
+            }
+        }
+
+        .equal {
+            background-color: $key-background_toggle;
+            color: $text-color-3;
+            box-shadow: 0px 5px 0px 0px $key-shadow-2;
+            &:active {
+                box-shadow: none;
+            }
+        }
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        background-color: $toggle-background_keypad-background;
+      }
+
+    input[type=range]::-webkit-slider-thumb {
+        background-color: $key-background_toggle;
+      }
+
+    input[type=range]::-moz-range-track {
+        background-color: $toggle-background_keypad-background;
+      }
+    input[type=range]::-moz-range-thumb {
+        background-color: $key-background_toggle;
+      }
+}

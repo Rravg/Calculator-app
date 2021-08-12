@@ -11,9 +11,76 @@ $key-shadow-1: hsl(224, 28%, 35%);
 $key-background_toggle: hsl(6, 63%, 50%);
 $key-shadow-2: hsl(6, 70%, 34%);
 
-$key-background-1: hsl(30, 25%, 89%);
+$key-background-2: hsl(30, 25%, 89%);
 $key-shadow-3: hsl(28, 16%, 65%);
 
 //Text
 $text-color-1: hsl(221, 14%, 31%);
 $text-color-2: hsl(0, 0, 100%);
+
+.theme-1 {
+    background-color: $main-background;
+    color: $text-color-2;
+    .wrapper {
+        background-color: $main-background;
+
+        .number-display {
+            background-color: $screen-background;
+            color: $text-color-2;
+        }
+
+        .number-grid {
+            background-color: $toggle-background_keypad-background;
+
+            .button {
+                background-color: $key-background-2;
+            }
+
+            .number {
+                color: $text-color-1;
+                box-shadow: 0px 5px 0px 0px $key-shadow-3;
+                
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .reset, .equal, .delete {
+                color: $text-color-2;
+            }
+
+            .reset, .delete {
+                background-color: $key-background-1;
+                box-shadow: 0px 5px 0px 0px $key-shadow-1;
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            .equal {
+                background-color: $key-background_toggle;
+                box-shadow: 0px 5px 0px 0px $key-shadow-2;
+                &:active {
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        background-color: $toggle-background_keypad-background;
+      }
+
+    input[type=range]::-webkit-slider-thumb {
+        background-color: $key-background_toggle;
+      }
+
+    input[type=range]::-moz-range-track {
+        background-color: $toggle-background_keypad-background;
+      }
+    input[type=range]::-moz-range-thumb {
+        background-color: $key-background_toggle;
+      }
+
+}

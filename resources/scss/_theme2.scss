@@ -11,9 +11,73 @@ $key-shadow-1: hsl(185, 58%, 25%);
 $key-background_toggle: hsl(25, 98%, 40%);
 $key-shadow-2: hsl(25, 99%, 27%);
 
-$key-background-1: hsl(45, 7%, 89%);
+$key-background-2: hsl(45, 7%, 89%);
 $key-shadow-3: hsl(35, 11%, 61%);
 
 //Text
 $text-color-1: hsl(60, 10%, 19%);
 $text-color-2: hsl(0, 0, 100%);
+
+.theme-2 {
+    background-color: $main-background;
+    color: $text-color-1;
+    .wrapper {
+        background-color: $main-background;
+    }
+
+    .number-display {
+        background-color: $screen-background;
+        color: $text-color-1;
+    }
+
+    .number-grid {
+        background-color: $toggle-background_keypad-background;
+
+        .button {
+            background-color: $key-background-2;
+        }
+
+        .number {
+            color: $text-color-1;
+            box-shadow: 0px 5px 0px 0px $key-shadow-3;
+            &:active {
+                box-shadow: none;
+            }
+        }
+
+        .reset, .equal, .delete {
+            color: $text-color-2;
+        }
+
+        .reset, .delete {
+            background-color: $key-background-1;
+            box-shadow: 0px 5px 0px 0px $key-shadow-1;
+            &:active {
+                box-shadow: none;
+            }
+        }
+
+        .equal {
+            background-color: $key-background_toggle;
+            box-shadow: 0px 5px 0px 0px $key-shadow-2;
+            &:active {
+                box-shadow: none;
+            }
+        }
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        background-color: $toggle-background_keypad-background;
+      }
+
+    input[type=range]::-webkit-slider-thumb {
+        background-color: $key-background_toggle;
+      }
+
+    input[type=range]::-moz-range-track {
+        background-color: $toggle-background_keypad-background;
+      }
+    input[type=range]::-moz-range-thumb {
+        background-color: $key-background_toggle;
+      }
+}
