@@ -59,6 +59,12 @@ const substractFunction = () => {
     memory = 3;
 }
 
+const divisionFunction = () => {
+    operatorB = operatorA;
+    operatorA = "";
+    memory = 2;
+}
+
 const calculateFunction = () => {
     if (memory === 5) {
         display.value = parseFloat(operatorA) * parseFloat(operatorB);
@@ -68,6 +74,9 @@ const calculateFunction = () => {
         memory = 0;
     } else if (memory === 3) {
         display.value = parseFloat(operatorB) - parseFloat(operatorA);
+        memory = 0;
+    } else if (memory === 2) {
+        display.value = parseFloat(operatorB) / parseFloat(operatorA);
         memory = 0;
     }
 }
@@ -93,6 +102,8 @@ const mainFunction = (e) => {
     } else if (actionElement === "delete") {
         operatorA = display.value.slice(0, -1);
         display.value = operatorA;
+    } else if (actionElement === "divide") {
+        divisionFunction();
     }
         
     
