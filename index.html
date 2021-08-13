@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="resources\style.css">
@@ -23,26 +23,26 @@
         <input type="range" min="1" max="3" step="1" id="theme-selector" name="theme-selector" value="1" class="theme-selector"> 
       </div> 
     </div>
-    <input type="number" id="result" name="result" class="number-display">
+    <input type="text" id="result" name="result" class="number-display" step="0.01">
     <div class="number-grid">
-      <button class="number seven button"> 7</button>
-      <button class="number eight button">8</button>
-      <button class="number nine button">9</button>
-      <button class="delete button">DEL</button>
-      <button class="number four button">4</button>
-      <button class="number five button">5</button>
-      <button class="number six button">6</button>
-      <button class="number sum button">+</button>
-      <button class="number one button">1</button>
-      <button class="number two button">2</button>
-      <button class="number thre button">3</button>
-      <button class="number minus button">-</button>
-      <button class="number point button">.</button>
-      <button class="number zero button">0</button>
-      <button class="number division button">/</button>
-      <button class="number multiplication button">x</button>
-      <button class="reset button">RESET</button>
-      <button class="equal button">=</button>
+      <button class="number seven button" id="seven">7</button>
+      <button class="number eight button" id="eight">8</button>
+      <button class="number nine button" id="nine">9</button>
+      <button class="delete button" id="delete" data-action="delete">DEL</button>
+      <button class="number four button" id="four">4</button>
+      <button class="number five button" id="five">5</button>
+      <button class="number six button" id="six">6</button>
+      <button class="number sum button" id="sum" data-action="add">+</button>
+      <button class="number one button" id="one">1</button>
+      <button class="number two button" id="two">2</button>
+      <button class="number thre button" id="three">3</button>
+      <button class="number minus button" id="minus" data-action="substraction">-</button>
+      <button class="number point button" id="point" data-action="decimal">.</button>
+      <button class="number zero button" id="zero">0</button>
+      <button class="number division button" id="division" data-action="divide">/</button>
+      <button class="number multiplication button" id="mult" data-action="multiply">x</button>
+      <button class="reset button" id="reset" data-action="clear">RESET</button>
+      <button class="equal button" id="equal" data-action="calculate">=</button>
     </div> 
 
   </div>
@@ -54,3 +54,5 @@
   <script src="resources\script.js"></script>
 </body>
 </html>
+
+
