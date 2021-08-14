@@ -97,7 +97,7 @@ const mainFunction = (e) => {
         addFunction();
     } else if (actionElement === "calculate") {
         calculateFunction();
-    } else if (actionElement === "subsctraction") {
+    } else if (actionElement === "substraction") {
         substractFunction();
     } else if (actionElement === "delete") {
         operatorA = display.value.slice(0, -1);
