@@ -24,7 +24,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 Users should be able to:
 
 - See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Perform mathematical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
 <!-- - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser (This feature is still under development)-->
 
@@ -51,8 +51,6 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
 I recently learned about SASS/SCSS so I chanllenged myself to do all the styling code in this pre-processor I didnt applied all the things that I would have wanted such as placeholders and mixins, this tell me I still need to improve. 
 I improved my layout skills and I am proud of that, I learned about the importance of the box-sizing property for easier and more predictable layout. I did also learned about how important is to make your code modular and the advantage of using @use with SASS. 
 I created a way to automatically apply themes to the entire webpage although I am sure it can be optimized and the code can be more DRY. 
@@ -60,10 +58,9 @@ I learned to always take into account the importance of your website being compa
 Learned about tools in internet to facilitate the styling of some html elements such as input[type='range'] elements. 
 
 
-
 ### Continued development
 
-Still one of the biggest areas of improvements in my projects is responsive design, recently I learned about Boostrap and I found their methods to solve the responsive design problem very interesting and plan to apply them in one of my future projects. 
+Still one of the biggest areas of improvements in my projects is responsive design, recently I learned about Boostrap and I found their methods to solve the responsive design problem and plan to apply them in one of my future projects. 
 
 
 ### Useful resources
