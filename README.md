@@ -71,5 +71,5 @@ Still one of the biggest areas of improvements in my projects is responsive desi
 
 ## Author
 
-- Website - [Rodrigo Villalobos]()
+- Website - [Rodrigo Villalobos](https://github.com/Rravg)
 - Frontend Mentor - [@Rravg](https://www.frontendmentor.io/profile/Rravg)
